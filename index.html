@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>coming soon</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style type="text/css">
+		*{
+			box-sizing:border-box;
+			margin:0;
+			padding:0;
+		}
+		html,body,section{height:100%;}
+		body{
+			background-image: url(image/forestbridge.jpg);
+			background-position:center;
+			background-size: cover;
+			background-repeat: no-repeat;
+			position:relative;
+			font-family: "Raleway",sans-serif;
+		}
+		h3{
+			font-weight:normal;
+			font-size:25px;
+			padding:15px 0 0 20px;
+			color:white;
+		}
+		section > p{
+			font-size:15px;
+			padding:0 0 15px 20px;
+			position:absolute;
+			left:0;
+			bottom:0;
+		}
+		div.middle{
+			padding:210px 535px 190px 455px; 
+			width:450px;
+			height:150px;
+			position: fixed;
+		}
+		@keyframes coming-soon {
+			from{
+				top:-300px;
+				opacity:0;
+			}
+		  to{
+		  	opacity:1;
+		  	top:0px;
+		  }
+		 }
+		div.middle h1{
+			font-weight: normal;
+			white-space:nowrap;
+			position:relative;
+			font-size:65px;
+			margin-bottom:20px;
+			animation-name: coming-soon;
+			animation-duration:.5s;
+		}
+		div.middle p{
+			margin-left:130px;
+			text-align:center;
+			border-top: 1px solid grey;
+			font-size: 18px;
+			padding:20px;
+			width:210px;
+		}
+		.white{
+			color:white;
+		}
+		@media only screen and (max-width: 500px) {
+		body{
+			background-image: url(forestbridge.jpg);
+			background-position:center;
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+			section > p{
+				font-size: 15px;
+			}
+			div.middle h1{
+				text-align:center;
+				font-size: 70px;
+				white-space: pre-wrap;
+			}
+			div.middle p{
+				font-size: 20px;
+			}
+			h3{
+				font-size: 30px;
+			}
+		} 
+
+	</style>
+</head>
+<body>
+	<section>
+		<h3>Logo</h3>
+		<p class="white">Powered by <a href="#" class="white">w3css</a></p>
+		<div class="middle white"> 
+			<h1>COMING SOON</h1>
+			<p>35 days left</p>
+		</div>
+	</section>
+</body>
+</html>
